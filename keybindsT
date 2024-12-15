@@ -1,0 +1,33 @@
+-- Keybind List:
+--/ H = Render // Y = Inf Yield // L = Anti Lag
+
+local UIS = game:GetService('UserInputService')
+local bool = false
+local yield = false
+
+UIS.InputBegan:Connect(function(input)
+
+    -- H = Render
+    if input.KeyCode == Enum.KeyCode.H then
+        if bool == false then
+            game:GetService("RunService"):Set3dRenderingEnabled(false)
+            bool = true
+        else
+            game:GetService("RunService"):Set3dRenderingEnabled(true)
+            bool = false
+        end
+    end
+
+    -- Y = Inf Yield
+    if input.KeyCode == Enum.KeyCode.Y then
+        if yield == false then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+            yield = true
+        end
+    end
+
+    -- L = Anti Lag
+    if input.KeyCode == Enum.KeyCode.L then
+        loadstring(game:HttpGet("https://pastebin.com/raw/SmTSqyDh"))();
+    end
+end) 
