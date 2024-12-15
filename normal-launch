@@ -1,3 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/TowerDefenseRNG"))();
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xalcohol/TRNG/refs/heads/main/ANTI-AFK"))();
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xalcohol/TRNG/refs/heads/main/keybindsT"))();
